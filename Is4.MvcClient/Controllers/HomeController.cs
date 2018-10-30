@@ -22,6 +22,13 @@ namespace Is4.MvcClient.Controllers
 
             return View();
         }
+        [Authorize(Policy = "EmployeeOnly")]
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Secure page.";
+
+            return View();
+        }
 
         public async Task Logout()
         {

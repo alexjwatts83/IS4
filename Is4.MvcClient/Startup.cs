@@ -49,8 +49,13 @@ namespace Is4.MvcClient
                     options.GetClaimsFromUserInfoEndpoint = true;
 
                     options.Scope.Add("api1");
-                    options.Scope.Add("offline_access");
+                    options.Scope.Add("website");
                 });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("website", @"http://bob.com"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

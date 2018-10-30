@@ -1579,3 +1579,1463 @@ System.IO.IOException: Failed to bind to address http://localhost:5000. ---> Sys
   "LocalIpAddress": "::1:5000",
   "RemoteIpAddress": "::1"
 }
+2018-10-30 14:53:43.807 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-30 14:53:56.917 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-30 14:53:57.202 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-30 14:53:57.329 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-30 14:53:57.421 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+  "Nonce": "636764684372818287.N2YyOGJmZWMtNjJmZi00NDAwLWI3ZjItNjdhM2Q0NGE3OGFhMjkxMTBmMDgtMmEzMS00YWUyLTkwYzItNjEyYWRkMGNkNTRl",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764684372818287.N2YyOGJmZWMtNjJmZi00NDAwLWI3ZjItNjdhM2Q0NGE3OGFhMjkxMTBmMDgtMmEzMS00YWUyLTkwYzItNjEyYWRkMGNkNTRl",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 14:53:57.435 +11:00 [INF] Showing login: User is not authenticated
+2018-10-30 14:54:11.700 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 14:54:11.743 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHU3D8HLOHP:00000002",
+  "TimeStamp": "2018-10-30T03:54:11Z",
+  "ProcessId": 16832,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 14:54:11.775 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:11.779 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:11.782 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 14:54:11.794 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+  "Nonce": "636764684372818287.N2YyOGJmZWMtNjJmZi00NDAwLWI3ZjItNjdhM2Q0NGE3OGFhMjkxMTBmMDgtMmEzMS00YWUyLTkwYzItNjEyYWRkMGNkNTRl",
+  "SessionId": "53bf14a9a04bb6ccab3c3cf0c170dff2",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764684372818287.N2YyOGJmZWMtNjJmZi00NDAwLWI3ZjItNjdhM2Q0NGE3OGFhMjkxMTBmMDgtMmEzMS00YWUyLTkwYzItNjEyYWRkMGNkNTRl",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 14:54:11.847 +11:00 [INF] Showing consent: User has not yet consented
+2018-10-30 14:54:11.856 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:11.861 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:15.064 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:15.067 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:15.121 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:15.124 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 14:54:15.128 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 14:54:15.163 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+  "Nonce": "636764684372818287.N2YyOGJmZWMtNjJmZi00NDAwLWI3ZjItNjdhM2Q0NGE3OGFhMjkxMTBmMDgtMmEzMS00YWUyLTkwYzItNjEyYWRkMGNkNTRl",
+  "SessionId": "53bf14a9a04bb6ccab3c3cf0c170dff2",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764684372818287.N2YyOGJmZWMtNjJmZi00NDAwLWI3ZjItNjdhM2Q0NGE3OGFhMjkxMTBmMDgtMmEzMS00YWUyLTkwYzItNjEyYWRkMGNkNTRl",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 14:54:15.186 +11:00 [INF] User consented to scopes: ["openid","profile","api1","offline_access"]
+2018-10-30 14:54:15.319 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "Scopes": "openid profile api1 offline_access",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****a3xw"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****3434"
+    }
+  ],
+  "ActivityId": "0HLHU3D8HLOHL:00000005",
+  "TimeStamp": "2018-10-30T03:54:15Z",
+  "ProcessId": 16832,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 14:54:15.336 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ClientId": "mvc",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_KsonzmSj-GnypiUK91YqLI6rk4ABibGMVySaZhtCCmQxalJD8m-B005l4vw4mpb3kdZOXmZIqlMTp7Et4DgMoBV0oXl_vSgX8F6br0SIxsKz9ENYBWr2DtPPKpQAjbpo9SoXO5l5TFhwoo_1s4378B1WGnSI-f7hxJCjABCiE1wWowt00QgejYfSl2FfkZR7C6cDGHY8cglnJat0qTal3wytkAIyQ58v3tAWfgaFDQs0nLl5iYyjlga1vPnOTPl73pQjAuQB8REWkwu7h8mDqkqdQ_XU627jCKgL8gGbb7mxYa0-hzBC0HYF5zOvxD60",
+  "Scope": "openid profile api1 offline_access"
+}
+2018-10-30 14:54:15.363 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 14:54:15.465 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-30 14:54:15.503 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "mvc",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHU3D8HLOHK:00000003",
+  "TimeStamp": "2018-10-30T03:54:15Z",
+  "ProcessId": 16832,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 14:54:15.555 +11:00 [INF] Token request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "1cb9893775f1e13cadc9e68e9ca745ae90780e9c2da32a1f0cf45b5a30d43434",
+  "Raw": {
+    "client_id": "mvc",
+    "client_secret": "***REDACTED***",
+    "code": "1cb9893775f1e13cadc9e68e9ca745ae90780e9c2da32a1f0cf45b5a30d43434",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:5001/signin-oidc"
+  }
+}
+2018-10-30 14:54:15.618 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "Endpoint": "Token",
+  "Scopes": "openid profile api1 offline_access",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****ukjQ"
+    },
+    {
+      "TokenType": "refresh_token",
+      "TokenValue": "****2ae8"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****m7gQ"
+    }
+  ],
+  "ActivityId": "0HLHU3D8HLOHK:00000003",
+  "TimeStamp": "2018-10-30T03:54:15Z",
+  "ProcessId": 16832,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 14:54:15.650 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-30 14:54:15.757 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-10-30 15:06:06.064 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-30 15:06:17.384 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-30 15:06:17.661 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-30 15:06:17.820 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:17.825 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:17.831 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-30 15:06:19.222 +11:00 [INF] End session request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "PostLogOutUri": "http://localhost:5001/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_nZ0jNhsnzU72kdxAq7UyJ8K1cxNr9GJW2QutVWzmkHkKJ28jI38Zeofo29-bAyhM76KdEoHi2vThPLAhUyzkmo3KkPQXql9onxu-lnWo8DPmWh0fHLZB52A2NdjygcRMBGETNhSH1ql2sXUFYpzlX",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:5001/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA4NzE2NTUsImV4cCI6MTU0MDg3MTk1NSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoibXZjIiwibm9uY2UiOiI2MzY3NjQ2ODQzNzI4MTgyODcuTjJZeU9HSm1aV010TmpKbVppMDBOREF3TFdJM1pqSXROamRoTTJRME5HRTNPR0ZoTWpreE1UQm1NRGd0TW1Fek1TMDBZV1V5TFRrd1l6SXROakV5WVdSa01HTmtOVFJsIiwiaWF0IjoxNTQwODcxNjU1LCJhdF9oYXNoIjoiUDZna0RueDZLNWlGRklCM0ZfU0YzdyIsInNpZCI6IjUzYmYxNGE5YTA0YmI2Y2NhYjNjM2NmMGMxNzBkZmYyIiwic3ViIjoiMGM3ZTI1YTYtNzMwOS00YTFmLTliY2EtYTU3MmVlMmI0ZmMyIiwiYXV0aF90aW1lIjoxNTQwODcxNjUxLCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.BP6kj3lXw5_Wlpc_JPcKK75ULwIq-3Dfi6tlMi4kHtLxQxmEEz0K9XIR_e5J-GFRwGxJugxyNrNNIwG7XWk-1aX0u8hbD6REUDBP39Rn25ZD2KaQf8vO-tQ7zX7dXbI7CQr8PqOekG2twlsEaufuhizBHSrDA39klbfXdIJj4VGFMtcEy0VICBxpVjZEO3zmtI2zSri_OWtv56B-7ly1qKhJs2ORcsJFjk0DyAlAo2R0NL6HN76cCbhhbiITHQ8ql4ILiAbRi3B9W5QMRW9loLByRZXyg1Iijf8Y7DmK4G-gDt0jajwmsDSZ2E8tkekVaFFuRjvjLUnf8OwM50ukjQ",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_nZ0jNhsnzU72kdxAq7UyJ8K1cxNr9GJW2QutVWzmkHkKJ28jI38Zeofo29-bAyhM76KdEoHi2vThPLAhUyzkmo3KkPQXql9onxu-lnWo8DPmWh0fHLZB52A2NdjygcRMBGETNhSH1ql2sXUFYpzlX",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:06:19.262 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:19.264 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:19.714 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-30 15:06:19.720 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-30 15:06:19.724 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-30 15:06:19.755 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "Alice Smith",
+  "ActivityId": "0HLHU3K578KUR:00000002",
+  "TimeStamp": "2018-10-30T04:06:19Z",
+  "ProcessId": 19316,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:06:25.296 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-30 15:06:25.322 +11:00 [INF] Successful signout callback.
+2018-10-30 15:06:29.633 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-30 15:06:29.704 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+  "Nonce": "636764691896167664.MDY3ZWRhMTktZDljMy00Y2RkLWIzZjAtZDdjOGEwNGY3NTRmYWJkZGExMjUtNDQ3MC00NGY0LTg0YjktNDBjYjU3Yjg4ZWI5",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764691896167664.MDY3ZWRhMTktZDljMy00Y2RkLWIzZjAtZDdjOGEwNGY3NTRmYWJkZGExMjUtNDQ3MC00NGY0LTg0YjktNDBjYjU3Yjg4ZWI5",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:06:29.727 +11:00 [INF] Showing login: User is not authenticated
+2018-10-30 15:06:37.956 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:06:37.970 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHU3K578KUR:00000006",
+  "TimeStamp": "2018-10-30T04:06:37Z",
+  "ProcessId": 19316,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:06:37.987 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:37.989 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:37.993 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:06:38.004 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+  "Nonce": "636764691896167664.MDY3ZWRhMTktZDljMy00Y2RkLWIzZjAtZDdjOGEwNGY3NTRmYWJkZGExMjUtNDQ3MC00NGY0LTg0YjktNDBjYjU3Yjg4ZWI5",
+  "SessionId": "0b910a970db14004e66fb14da507bfc6",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764691896167664.MDY3ZWRhMTktZDljMy00Y2RkLWIzZjAtZDdjOGEwNGY3NTRmYWJkZGExMjUtNDQ3MC00NGY0LTg0YjktNDBjYjU3Yjg4ZWI5",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:06:38.029 +11:00 [INF] Showing consent: User has not yet consented
+2018-10-30 15:06:38.037 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:38.040 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:40.451 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:40.454 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:40.507 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:40.510 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:06:40.513 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:06:40.522 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+  "Nonce": "636764691896167664.MDY3ZWRhMTktZDljMy00Y2RkLWIzZjAtZDdjOGEwNGY3NTRmYWJkZGExMjUtNDQ3MC00NGY0LTg0YjktNDBjYjU3Yjg4ZWI5",
+  "SessionId": "0b910a970db14004e66fb14da507bfc6",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764691896167664.MDY3ZWRhMTktZDljMy00Y2RkLWIzZjAtZDdjOGEwNGY3NTRmYWJkZGExMjUtNDQ3MC00NGY0LTg0YjktNDBjYjU3Yjg4ZWI5",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:06:40.547 +11:00 [INF] User consented to scopes: ["openid","profile","api1","offline_access"]
+2018-10-30 15:06:40.656 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "Scopes": "openid profile api1 offline_access",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****VokQ"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****fa7c"
+    }
+  ],
+  "ActivityId": "0HLHU3K578KUV:00000004",
+  "TimeStamp": "2018-10-30T04:06:40Z",
+  "ProcessId": 19316,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:06:40.670 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ClientId": "mvc",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8wrGCJBjBPmOxLF7Z0peZHhDvI7U4UQPfG9qyy7eA8s-p9p-FNPDjARZh8WqTMEO9NHBvJVt5iDVQubHYTbxPvo7IGWZxswYKgjU094vXResPYuJkOju9no105iaexMT8n8gdV8tx3k_PmZuOQs1Y9PETLqTt9ngfUWPQR7cCUvgdZlaGiaUvGt0-8CjOIohzRaQHZAl_IjseXg1P4tJIiFStltXSkcZrDvSgKMviokmTpoDRzaLsgON28rYJ0dBUguQ1Djswed1TvXBlBIoN0lG4i45jd1OpXloTbLxqb6fYc7dJ5fceu-XIUjzAeNUA",
+  "Scope": "openid profile api1 offline_access"
+}
+2018-10-30 15:06:40.688 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:06:40.786 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-30 15:06:40.824 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "mvc",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHU3K578KUQ:00000003",
+  "TimeStamp": "2018-10-30T04:06:40Z",
+  "ProcessId": 19316,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:06:40.872 +11:00 [INF] Token request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "21d99a3aae1828edcedfa20b09799548d87ef9cdf8c14d2398304c288a57fa7c",
+  "Raw": {
+    "client_id": "mvc",
+    "client_secret": "***REDACTED***",
+    "code": "21d99a3aae1828edcedfa20b09799548d87ef9cdf8c14d2398304c288a57fa7c",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:5001/signin-oidc"
+  }
+}
+2018-10-30 15:06:40.942 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "Endpoint": "Token",
+  "Scopes": "openid profile api1 offline_access",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****na3Q"
+    },
+    {
+      "TokenType": "refresh_token",
+      "TokenValue": "****2ec4"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****I8wQ"
+    }
+  ],
+  "ActivityId": "0HLHU3K578KUQ:00000003",
+  "TimeStamp": "2018-10-30T04:06:40Z",
+  "ProcessId": 19316,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:06:40.971 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-30 15:06:41.018 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-10-30 15:07:55.728 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-30 15:08:09.364 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-30 15:08:09.653 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-30 15:08:09.806 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:09.811 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:09.818 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-30 15:08:11.260 +11:00 [INF] End session request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "PostLogOutUri": "http://localhost:5001/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-hitgm905UidHdVGYkaIzIrhrcZmaFl5_953didfwXHYETVF7iKXVqVWvGcoTQc4BaQ-N2L634YI1qZL62ZzRJr7TD44mBAAipjy_Mwtd-S2_Mh6qFwPG53XwgC6IWGJnx-W8wilWbqbBq44z9SkCJ",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:5001/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA4NzI0MDAsImV4cCI6MTU0MDg3MjcwMCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoibXZjIiwibm9uY2UiOiI2MzY3NjQ2OTE4OTYxNjc2NjQuTURZM1pXUmhNVGt0WkRsak15MDBZMlJrTFdJelpqQXRaRGRqT0dFd05HWTNOVFJtWVdKa1pHRXhNalV0TkRRM01DMDBOR1kwTFRnMFlqa3ROREJqWWpVM1lqZzRaV0k1IiwiaWF0IjoxNTQwODcyNDAwLCJhdF9oYXNoIjoiZmZEaDZ2Tjg4YUhfT0RZSU5XTzVCdyIsInNpZCI6IjBiOTEwYTk3MGRiMTQwMDRlNjZmYjE0ZGE1MDdiZmM2Iiwic3ViIjoiMGM3ZTI1YTYtNzMwOS00YTFmLTliY2EtYTU3MmVlMmI0ZmMyIiwiYXV0aF90aW1lIjoxNTQwODcyMzk3LCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.MfKbgqNmPUE4evHPRdqlsxFO_CxUqcYzN_RxV2T89p2_NZ8Oc3xVaefOa6DjPm3aWiiHytU4ZxKbnEkCPOKmNBChjNGZz5Z76EAsrFr6aNmn3ys2f65AU61VfoXUwpFXlDo9Amrs1-TGZNIwqCZaPu_b_1s1Ti07V8XLBucgCZbSFtJuFEGdj3FVNI2VbbPXW8LhpogX_YFfwKw887unqUcsAUQ1SH0SU6AtDdHn2w0vzCEgp63EwS9ohkyKVZH6zDIxi7Lw1_t-PcJO7c5XW1XiciqatxqqTIbFubqOBihdRneHvS2f4K_HZ61qSPZR-CUvzCtmaQsgmjgiT1na3Q",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-hitgm905UidHdVGYkaIzIrhrcZmaFl5_953didfwXHYETVF7iKXVqVWvGcoTQc4BaQ-N2L634YI1qZL62ZzRJr7TD44mBAAipjy_Mwtd-S2_Mh6qFwPG53XwgC6IWGJnx-W8wilWbqbBq44z9SkCJ",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:08:11.304 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:11.307 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:11.775 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-30 15:08:11.780 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-30 15:08:11.783 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-30 15:08:11.810 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "Alice Smith",
+  "ActivityId": "0HLHU3L6J0AAB:00000002",
+  "TimeStamp": "2018-10-30T04:08:11Z",
+  "ProcessId": 19148,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:08:17.449 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-30 15:08:17.474 +11:00 [INF] Successful signout callback.
+2018-10-30 15:08:20.457 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-30 15:08:20.539 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+  "Nonce": "636764693004433440.YzFmMzU3NzgtYWFiMi00ZjEwLWI0MDMtMmJlMWZhYTI0N2ZkNzI4ZWY3NmQtNWIzNC00Y2I1LThmYzQtZDU2ZmY4NDUzMGUx",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764693004433440.YzFmMzU3NzgtYWFiMi00ZjEwLWI0MDMtMmJlMWZhYTI0N2ZkNzI4ZWY3NmQtNWIzNC00Y2I1LThmYzQtZDU2ZmY4NDUzMGUx",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:08:20.566 +11:00 [INF] Showing login: User is not authenticated
+2018-10-30 15:08:30.351 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:08:30.366 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHU3L6J0AAB:00000006",
+  "TimeStamp": "2018-10-30T04:08:30Z",
+  "ProcessId": 19148,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:08:30.384 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:30.386 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:30.390 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:08:30.401 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+  "Nonce": "636764693004433440.YzFmMzU3NzgtYWFiMi00ZjEwLWI0MDMtMmJlMWZhYTI0N2ZkNzI4ZWY3NmQtNWIzNC00Y2I1LThmYzQtZDU2ZmY4NDUzMGUx",
+  "SessionId": "4707624d26d4d40e64504e196579ec4d",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764693004433440.YzFmMzU3NzgtYWFiMi00ZjEwLWI0MDMtMmJlMWZhYTI0N2ZkNzI4ZWY3NmQtNWIzNC00Y2I1LThmYzQtZDU2ZmY4NDUzMGUx",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:08:30.425 +11:00 [INF] Showing consent: User has not yet consented
+2018-10-30 15:08:30.435 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:30.438 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:33.099 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:33.102 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:33.154 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:33.157 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:08:33.160 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:08:33.167 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+  "Nonce": "636764693004433440.YzFmMzU3NzgtYWFiMi00ZjEwLWI0MDMtMmJlMWZhYTI0N2ZkNzI4ZWY3NmQtNWIzNC00Y2I1LThmYzQtZDU2ZmY4NDUzMGUx",
+  "SessionId": "4707624d26d4d40e64504e196579ec4d",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access",
+    "response_mode": "form_post",
+    "nonce": "636764693004433440.YzFmMzU3NzgtYWFiMi00ZjEwLWI0MDMtMmJlMWZhYTI0N2ZkNzI4ZWY3NmQtNWIzNC00Y2I1LThmYzQtZDU2ZmY4NDUzMGUx",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:08:33.188 +11:00 [INF] User consented to scopes: ["openid","profile","api1","offline_access"]
+2018-10-30 15:08:33.293 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "Scopes": "openid profile api1 offline_access",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****hnSQ"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****0b1b"
+    }
+  ],
+  "ActivityId": "0HLHU3L6J0AAB:0000000A",
+  "TimeStamp": "2018-10-30T04:08:33Z",
+  "ProcessId": 19148,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:08:33.302 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ClientId": "mvc",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-X-MS5cnaFvY9Czk8a5ACJI5i3OsmtWgxYXeqY1qGcqGsCRkA0utvTI4ymacrjAQArnxGNglehyvAKKCK9Uslf8t9pjm5oAiufbH1V5KNpM-sdgrcd_3rX1K5PVUR2YS7DGNiQNdvzykiMVX4Fk3rLKPwNiBxsGs561C8-NS6SyAbgGqYCisOays3pdMl3VDrGuq8IN5d5fpX4JMoehZW2YJNS1bZptA2dSGZGLYkCTPlNaXc5YL-5zSuDOVhHRVyh31skeCDiJPsQk-3PW5LoCel4yxCNHD6OUSl3B_aLnerc-RGrDMkOFylTeuuAu-I",
+  "Scope": "openid profile api1 offline_access"
+}
+2018-10-30 15:08:33.318 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:08:33.412 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-30 15:08:33.452 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "mvc",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHU3L6J0AAA:00000003",
+  "TimeStamp": "2018-10-30T04:08:33Z",
+  "ProcessId": 19148,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:08:33.503 +11:00 [INF] Token request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "db2e1d0cdfc2392af4967203898c1ca33b60695332d4e545ff529bcfa00a0b1b",
+  "Raw": {
+    "client_id": "mvc",
+    "client_secret": "***REDACTED***",
+    "code": "db2e1d0cdfc2392af4967203898c1ca33b60695332d4e545ff529bcfa00a0b1b",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:5001/signin-oidc"
+  }
+}
+2018-10-30 15:08:33.568 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "Endpoint": "Token",
+  "Scopes": "openid profile api1 offline_access",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****7tXg"
+    },
+    {
+      "TokenType": "refresh_token",
+      "TokenValue": "****7bef"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****vHZQ"
+    }
+  ],
+  "ActivityId": "0HLHU3L6J0AAA:00000003",
+  "TimeStamp": "2018-10-30T04:08:33Z",
+  "ProcessId": 19148,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:08:33.588 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-30 15:08:33.636 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-10-30 15:14:42.747 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-30 15:14:54.215 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-30 15:14:54.496 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-30 15:14:54.644 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:14:54.648 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:14:54.654 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-30 15:14:56.022 +11:00 [INF] End session request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "PostLogOutUri": "http://localhost:5001/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-sLEIKuaRCVyXwysTsypCE_cCJIL5FeqpbTqcrsh9SPQVFy1munth2D09HjWDSgUUphbjYy1WopAL4g_5P3aBLKaO8hoFrUT8WzlpPojx7yvjep0ZUaZS5-7DFwZlDlFVGDd-NdwmvbtGFlZV0onMW",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:5001/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA4NzI1MTMsImV4cCI6MTU0MDg3MjgxMywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoibXZjIiwibm9uY2UiOiI2MzY3NjQ2OTMwMDQ0MzM0NDAuWXpGbU16VTNOemd0WVdGaU1pMDBaakV3TFdJME1ETXRNbUpsTVdaaFlUSTBOMlprTnpJNFpXWTNObVF0TldJek5DMDBZMkkxTFRobVl6UXRaRFUyWm1ZNE5EVXpNR1V4IiwiaWF0IjoxNTQwODcyNTEzLCJhdF9oYXNoIjoidHlELWJVS2NSbTZuX1ZISXM2NkhKdyIsInNpZCI6IjQ3MDc2MjRkMjZkNGQ0MGU2NDUwNGUxOTY1NzllYzRkIiwic3ViIjoiMGM3ZTI1YTYtNzMwOS00YTFmLTliY2EtYTU3MmVlMmI0ZmMyIiwiYXV0aF90aW1lIjoxNTQwODcyNTEwLCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.azWUSLRDfG3hxxWS8sICPYf6QvpNa5OIFgPg-0hlQnx0ZzFFYLW8Ffv3fjUBCvCR21VcbMMTu1BK4CZWtv9mnDDUU78H7aoFktxjgKInnnEhHmFHIsZZH_yKUVu6n5UO9XWTRX32UjgTOHVkr8LJwJzdcjK7IvnX8kF_VGkbiVdYKdl21P6tp_AISzO30wLjkjeWVdhD_aE7lfa6989_bwXqAj5TnJV94uvXN_snbFVX4D6IWqQSL1GCHG6BS31MZU0WJWmXUDh4JuNf3FNXxlM4hnH_KlESKMwNgLvXaQ-09YpCMUru38wA8SEOLq1L6o-JCvSWR7qiV_A3827tXg",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-sLEIKuaRCVyXwysTsypCE_cCJIL5FeqpbTqcrsh9SPQVFy1munth2D09HjWDSgUUphbjYy1WopAL4g_5P3aBLKaO8hoFrUT8WzlpPojx7yvjep0ZUaZS5-7DFwZlDlFVGDd-NdwmvbtGFlZV0onMW",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:14:56.056 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:14:56.059 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:14:56.532 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-30 15:14:56.537 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-30 15:14:56.541 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-30 15:14:56.572 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "Alice Smith",
+  "ActivityId": "0HLHU3OV80PTG:00000002",
+  "TimeStamp": "2018-10-30T04:14:56Z",
+  "ProcessId": 15904,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:15:02.147 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-30 15:15:02.172 +11:00 [INF] Successful signout callback.
+2018-10-30 15:15:05.502 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-30 15:15:05.575 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+  "Nonce": "636764697054876702.MjU3NTgzODYtNDNmNi00YjZlLTgxZmUtNWQzZjE4ZDk4ZmU2ZjBlOGY0YzgtYmY5YS00MGE1LWIyZWMtOGZhMjFhMjNmNzBl",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access website",
+    "response_mode": "form_post",
+    "nonce": "636764697054876702.MjU3NTgzODYtNDNmNi00YjZlLTgxZmUtNWQzZjE4ZDk4ZmU2ZjBlOGY0YzgtYmY5YS00MGE1LWIyZWMtOGZhMjFhMjNmNzBl",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:15:05.590 +11:00 [INF] Showing login: User is not authenticated
+2018-10-30 15:15:14.980 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:15:14.995 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHU3OV80PTG:00000006",
+  "TimeStamp": "2018-10-30T04:15:14Z",
+  "ProcessId": 15904,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:15:15.013 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:15.016 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:15.024 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:15:15.036 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+  "Nonce": "636764697054876702.MjU3NTgzODYtNDNmNi00YjZlLTgxZmUtNWQzZjE4ZDk4ZmU2ZjBlOGY0YzgtYmY5YS00MGE1LWIyZWMtOGZhMjFhMjNmNzBl",
+  "SessionId": "69d6d26f14dacc1ddd434c1d13d238da",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access website",
+    "response_mode": "form_post",
+    "nonce": "636764697054876702.MjU3NTgzODYtNDNmNi00YjZlLTgxZmUtNWQzZjE4ZDk4ZmU2ZjBlOGY0YzgtYmY5YS00MGE1LWIyZWMtOGZhMjFhMjNmNzBl",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:15:15.054 +11:00 [INF] Showing consent: User has not yet consented
+2018-10-30 15:15:15.063 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:15.066 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:22.051 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:22.053 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:22.099 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:22.102 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:15:22.104 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:15:22.112 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 offline_access website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+  "Nonce": "636764697054876702.MjU3NTgzODYtNDNmNi00YjZlLTgxZmUtNWQzZjE4ZDk4ZmU2ZjBlOGY0YzgtYmY5YS00MGE1LWIyZWMtOGZhMjFhMjNmNzBl",
+  "SessionId": "69d6d26f14dacc1ddd434c1d13d238da",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 offline_access website",
+    "response_mode": "form_post",
+    "nonce": "636764697054876702.MjU3NTgzODYtNDNmNi00YjZlLTgxZmUtNWQzZjE4ZDk4ZmU2ZjBlOGY0YzgtYmY5YS00MGE1LWIyZWMtOGZhMjFhMjNmNzBl",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:15:22.132 +11:00 [INF] User consented to scopes: ["openid","profile","website","api1","offline_access"]
+2018-10-30 15:15:22.244 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "Scopes": "openid profile website api1 offline_access",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****GJgg"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****3b90"
+    }
+  ],
+  "ActivityId": "0HLHU3OV80PTG:0000000A",
+  "TimeStamp": "2018-10-30T04:15:22Z",
+  "ProcessId": 15904,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:15:22.253 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ClientId": "mvc",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8GAeD-02J9f0y5jUMGGdLZH1TZAstdjbUgTbhwqyDUZxMvi8JacnKMKcNm9jbjR8I-pmt_1kP3y4LQxJcXk222yma2SI0Rdpn_LUJnydj_ucwddV4SUOh5uGvKbNm8yGxgUWBX7Heq975n8xPTZlkKxKA2wf5dQ5Y2nokP0TpbUZxM4r8xOQn7IA_FgUb3eL6jzjrJCsn3teSXdUKpR33Z3jYrWvmcyx7cnzgAu5QXLSUcW3vENFRCZMz4NoUWDcde1pkF8lgzFzVJjNEmpivucdJ7po09z8qCzzS3Ay7BMCVOnGa-Of3ZzAll9ohp8RM",
+  "Scope": "openid profile website api1 offline_access"
+}
+2018-10-30 15:15:22.272 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:15:22.366 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-30 15:15:22.405 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "mvc",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHU3OV80PTF:00000003",
+  "TimeStamp": "2018-10-30T04:15:22Z",
+  "ProcessId": 15904,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:15:22.459 +11:00 [INF] Token request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "c5f519fd4f30f90c19323b05a37d61c7c3489cf6e81c3aa0432c2a8f60e83b90",
+  "Raw": {
+    "client_id": "mvc",
+    "client_secret": "***REDACTED***",
+    "code": "c5f519fd4f30f90c19323b05a37d61c7c3489cf6e81c3aa0432c2a8f60e83b90",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:5001/signin-oidc"
+  }
+}
+2018-10-30 15:15:22.519 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "Endpoint": "Token",
+  "Scopes": "openid profile website api1 offline_access",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****KKqA"
+    },
+    {
+      "TokenType": "refresh_token",
+      "TokenValue": "****40b2"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****MBvg"
+    }
+  ],
+  "ActivityId": "0HLHU3OV80PTF:00000003",
+  "TimeStamp": "2018-10-30T04:15:22Z",
+  "ProcessId": 15904,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:15:22.540 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-30 15:15:22.591 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-10-30 15:18:59.998 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-30 15:19:42.576 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-30 15:19:42.887 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-30 15:19:43.050 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:19:43.055 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:19:43.061 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-30 15:19:44.438 +11:00 [INF] End session request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "PostLogOutUri": "http://localhost:5001/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8prEBUVPLhIPHzPVCnsD31LT5lwXX_WqlO_UN0Bp4pzaeSGI9-sDwh2DBoG1LcQFd-bU3X_pihF4ONBy18GCc8hKodEVvcurhJKhpRGIoAtwiAMNQYg4GFBdPqLyhlgtbjH-l9VUgCMLdq3ZjbmFnU",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:5001/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA4NzI5MjIsImV4cCI6MTU0MDg3MzIyMiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoibXZjIiwibm9uY2UiOiI2MzY3NjQ2OTcwNTQ4NzY3MDIuTWpVM05UZ3pPRFl0TkRObU5pMDBZalpsTFRneFptVXROV1F6WmpFNFpEazRabVUyWmpCbE9HWTBZemd0WW1ZNVlTMDBNR0UxTFdJeVpXTXRPR1poTWpGaE1qTm1OekJsIiwiaWF0IjoxNTQwODcyOTIyLCJhdF9oYXNoIjoibk1fLTAtVTJ2bjZvTlBNSWJmTHpKZyIsInNpZCI6IjY5ZDZkMjZmMTRkYWNjMWRkZDQzNGMxZDEzZDIzOGRhIiwic3ViIjoiMGM3ZTI1YTYtNzMwOS00YTFmLTliY2EtYTU3MmVlMmI0ZmMyIiwiYXV0aF90aW1lIjoxNTQwODcyOTE0LCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.0a_7fhPQ7DlcdshxklDS21NuKugVjs5OppGufFW0WY-POkypSDY192ZXo3BxA3fsO7C1ey_sezkPrpGsnEB6bCe21FnTvEym1AvSLcVOSHj4XHLL8eNFH7EuaQwR22qup5iJWMGYNLuAryWFAS74vJl1stJ6VhCzwKTXCyrHkeC3TzFmuNr5wzQIVh3qNM578gM2LBBcPtiP_p0OxT8pEWe_lIXU3u-VNJF0gVDTkJCZV7emSXgwAjFQYw7ve_NIMnssfaiFJvE7cj8tyMoS2P7TF9-25DNSmg_Hj5uWjDmjbrFI3LQDZrdjkVlE-pDnkqYN6U8zsGbd4-EPDGKKqA",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8prEBUVPLhIPHzPVCnsD31LT5lwXX_WqlO_UN0Bp4pzaeSGI9-sDwh2DBoG1LcQFd-bU3X_pihF4ONBy18GCc8hKodEVvcurhJKhpRGIoAtwiAMNQYg4GFBdPqLyhlgtbjH-l9VUgCMLdq3ZjbmFnU",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:19:44.475 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:19:44.478 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:19:44.943 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-30 15:19:44.949 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-30 15:19:44.953 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-30 15:19:44.982 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "Alice Smith",
+  "ActivityId": "0HLHU3RL60UNG:00000002",
+  "TimeStamp": "2018-10-30T04:19:44Z",
+  "ProcessId": 16256,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:19:50.636 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-30 15:19:50.659 +11:00 [INF] Successful signout callback.
+2018-10-30 15:19:55.198 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-30 15:19:55.275 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+  "Nonce": "636764699951827897.NDBhNmMwMmQtZDQ2Ni00OGU4LWExMjQtZDEwMWI1OGJhMGJjZjIwNTE2NGQtNWFiMi00NzEwLWJhMmYtMzFkOWE5ZjA3M2Qz",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 website",
+    "response_mode": "form_post",
+    "nonce": "636764699951827897.NDBhNmMwMmQtZDQ2Ni00OGU4LWExMjQtZDEwMWI1OGJhMGJjZjIwNTE2NGQtNWFiMi00NzEwLWJhMmYtMzFkOWE5ZjA3M2Qz",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:19:55.288 +11:00 [INF] Showing login: User is not authenticated
+2018-10-30 15:20:05.396 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:20:05.410 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHU3RL60UNG:00000006",
+  "TimeStamp": "2018-10-30T04:20:05Z",
+  "ProcessId": 16256,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:20:05.427 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:05.429 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:05.432 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:20:05.445 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+  "Nonce": "636764699951827897.NDBhNmMwMmQtZDQ2Ni00OGU4LWExMjQtZDEwMWI1OGJhMGJjZjIwNTE2NGQtNWFiMi00NzEwLWJhMmYtMzFkOWE5ZjA3M2Qz",
+  "SessionId": "e571d25fee4647f89e1ab8d74669ae33",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 website",
+    "response_mode": "form_post",
+    "nonce": "636764699951827897.NDBhNmMwMmQtZDQ2Ni00OGU4LWExMjQtZDEwMWI1OGJhMGJjZjIwNTE2NGQtNWFiMi00NzEwLWJhMmYtMzFkOWE5ZjA3M2Qz",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:20:05.468 +11:00 [INF] Showing consent: User has not yet consented
+2018-10-30 15:20:05.476 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:05.479 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:07.510 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:07.513 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:07.564 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:07.567 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:20:07.569 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:20:07.576 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+  "Nonce": "636764699951827897.NDBhNmMwMmQtZDQ2Ni00OGU4LWExMjQtZDEwMWI1OGJhMGJjZjIwNTE2NGQtNWFiMi00NzEwLWJhMmYtMzFkOWE5ZjA3M2Qz",
+  "SessionId": "e571d25fee4647f89e1ab8d74669ae33",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 website",
+    "response_mode": "form_post",
+    "nonce": "636764699951827897.NDBhNmMwMmQtZDQ2Ni00OGU4LWExMjQtZDEwMWI1OGJhMGJjZjIwNTE2NGQtNWFiMi00NzEwLWJhMmYtMzFkOWE5ZjA3M2Qz",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:20:07.596 +11:00 [INF] User consented to scopes: ["openid","profile","website","api1"]
+2018-10-30 15:20:07.707 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "Scopes": "openid profile website api1",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****L_Ow"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****d46b"
+    }
+  ],
+  "ActivityId": "0HLHU3RL60UNL:00000004",
+  "TimeStamp": "2018-10-30T04:20:07Z",
+  "ProcessId": 16256,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:20:07.717 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "ClientId": "mvc",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_kpEz4cS-yb9q6kvM2cDYFaLr8kGFi9PqDp0v1XRlnPf8XM2OGDsXXoCas8dCRScoKNRBfUvDvK19aY9PiNyherdZ5I23ccdBgQchyA0pwcfjVRqaH2p5o-lIL5-UjTTXvgscICelQhCCC9MO3Gv9Du3vniRhI8P0x-KG5nHLfil7fudT6PrdM6r0HTs1JsAq4978LFyhmm-M3vlifQ1oCjo6qZNnP-EPC0HEzQ-KMwNBnTk0rYIc43h2oNTZmgICZvSsTqAowYtufzlwghtq2KGmelbL-zWVFrUBdm6kg3et0vCbsMCBMtrzQ_77-mlI",
+  "Scope": "openid profile website api1"
+}
+2018-10-30 15:20:07.735 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:20:07.825 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-30 15:20:07.863 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "mvc",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHU3RL60UNF:00000003",
+  "TimeStamp": "2018-10-30T04:20:07Z",
+  "ProcessId": 16256,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:20:07.917 +11:00 [INF] Token request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "e752c51cd0d4d56fab9bd007856198fad5668b1600b0e55ba5eec22dde43d46b",
+  "Raw": {
+    "client_id": "mvc",
+    "client_secret": "***REDACTED***",
+    "code": "e752c51cd0d4d56fab9bd007856198fad5668b1600b0e55ba5eec22dde43d46b",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:5001/signin-oidc"
+  }
+}
+2018-10-30 15:20:07.969 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "Endpoint": "Token",
+  "Scopes": "openid profile website api1",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****4Xhw"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****55BQ"
+    }
+  ],
+  "ActivityId": "0HLHU3RL60UNF:00000003",
+  "TimeStamp": "2018-10-30T04:20:07Z",
+  "ProcessId": 16256,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:20:07.993 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-30 15:20:08.040 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-10-30 15:22:02.509 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-30 15:22:12.988 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-30 15:22:13.297 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-30 15:22:13.447 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:13.451 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:13.457 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-30 15:22:14.826 +11:00 [INF] End session request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "PostLogOutUri": "http://localhost:5001/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV_vsGgfpKsneSKUamw5Ppnuujdl-7Jb0YVK6TuL352U00fFPmCd5-d2onJEclUkN1k4wDaAzKOBBpJNXXt3XZmnAi3uEX5uW-GTE1_oZjy4HFy-aUB1yHfr1mE7dXVrxQTy2DX4jwRsu0zXZ368XBRG",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:5001/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA4NzMyMDcsImV4cCI6MTU0MDg3MzUwNywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoibXZjIiwibm9uY2UiOiI2MzY3NjQ2OTk5NTE4Mjc4OTcuTkRCaE5tTXdNbVF0WkRRMk5pMDBPR1U0TFdFeE1qUXRaREV3TVdJMU9HSmhNR0pqWmpJd05URTJOR1F0TldGaU1pMDBOekV3TFdKaE1tWXRNekZrT1dFNVpqQTNNMlF6IiwiaWF0IjoxNTQwODczMjA3LCJhdF9oYXNoIjoiT3RnUG5yQjNFem1PRHlFbEJua3U1QSIsInNpZCI6ImU1NzFkMjVmZWU0NjQ3Zjg5ZTFhYjhkNzQ2NjlhZTMzIiwic3ViIjoiMGM3ZTI1YTYtNzMwOS00YTFmLTliY2EtYTU3MmVlMmI0ZmMyIiwiYXV0aF90aW1lIjoxNTQwODczMjA1LCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.zI-gxDyxoeiUYb1rtooKp8SU0b_5xUXc0923mABgt-IZRg7lLW7gD4Ujgbdcw1TDQKpUtyDNv7L7zHq90TbxBxRI2sZ3HEIXCIuScvuFBTSHG53iUBpbCB65MMO4xIzo8gz6zTkv6qL03oJleHcb9zKwSUSnHVC6wozmkJJotc925Dc5knJV_mOCaHHaqiOzTtfnhBrrZ1b4cNrlivUvWtGrLYrSVk3W4H2eWmsBQLO6iTTmYHPcnwJ4x0Ierr79LjHzxM7NMIhfYpzXmPFLSWlUDGZ2t6NjbNLgmVd_pLATE3_aKbVwyHvh1HgorU_KLtiOYExZi9oXJafGLh4Xhw",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV_vsGgfpKsneSKUamw5Ppnuujdl-7Jb0YVK6TuL352U00fFPmCd5-d2onJEclUkN1k4wDaAzKOBBpJNXXt3XZmnAi3uEX5uW-GTE1_oZjy4HFy-aUB1yHfr1mE7dXVrxQTy2DX4jwRsu0zXZ368XBRG",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:22:14.864 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:14.867 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:15.331 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-30 15:22:15.336 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-30 15:22:15.339 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-30 15:22:15.367 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "0c7e25a6-7309-4a1f-9bca-a572ee2b4fc2",
+  "DisplayName": "Alice Smith",
+  "ActivityId": "0HLHU3T20892G:00000002",
+  "TimeStamp": "2018-10-30T04:22:15Z",
+  "ProcessId": 11516,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:22:20.869 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-30 15:22:20.892 +11:00 [INF] Successful signout callback.
+2018-10-30 15:22:28.076 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-30 15:22:28.149 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+  "Nonce": "636764701480622868.ZTYxYzMzOGItZTllMS00ZGVmLTk1MzEtMzE0ZDU4MDM0ZTNlOTQ2YzRjY2YtMzQxMC00N2Y0LWJhMjQtZjE2MDUzMmM5YTFk",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 website",
+    "response_mode": "form_post",
+    "nonce": "636764701480622868.ZTYxYzMzOGItZTllMS00ZGVmLTk1MzEtMzE0ZDU4MDM0ZTNlOTQ2YzRjY2YtMzQxMC00N2Y0LWJhMjQtZjE2MDUzMmM5YTFk",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:22:28.163 +11:00 [INF] Showing login: User is not authenticated
+2018-10-30 15:22:45.203 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:22:45.218 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "00484a0b-d90e-4acb-bd05-151717237ff8",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHU3T20892G:00000006",
+  "TimeStamp": "2018-10-30T04:22:45Z",
+  "ProcessId": 11516,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:22:45.232 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:45.235 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:45.238 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:22:45.249 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "00484a0b-d90e-4acb-bd05-151717237ff8",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+  "Nonce": "636764701480622868.ZTYxYzMzOGItZTllMS00ZGVmLTk1MzEtMzE0ZDU4MDM0ZTNlOTQ2YzRjY2YtMzQxMC00N2Y0LWJhMjQtZjE2MDUzMmM5YTFk",
+  "SessionId": "a35497e23e5e18131975e77b08517c56",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 website",
+    "response_mode": "form_post",
+    "nonce": "636764701480622868.ZTYxYzMzOGItZTllMS00ZGVmLTk1MzEtMzE0ZDU4MDM0ZTNlOTQ2YzRjY2YtMzQxMC00N2Y0LWJhMjQtZjE2MDUzMmM5YTFk",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:22:45.269 +11:00 [INF] Showing consent: User has not yet consented
+2018-10-30 15:22:45.276 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:45.279 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:50.770 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:50.772 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:50.830 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:50.833 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-30 15:22:50.837 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-30 15:22:50.846 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "00484a0b-d90e-4acb-bd05-151717237ff8",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile api1 website",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+  "Nonce": "636764701480622868.ZTYxYzMzOGItZTllMS00ZGVmLTk1MzEtMzE0ZDU4MDM0ZTNlOTQ2YzRjY2YtMzQxMC00N2Y0LWJhMjQtZjE2MDUzMmM5YTFk",
+  "SessionId": "a35497e23e5e18131975e77b08517c56",
+  "Raw": {
+    "client_id": "mvc",
+    "redirect_uri": "http://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile api1 website",
+    "response_mode": "form_post",
+    "nonce": "636764701480622868.ZTYxYzMzOGItZTllMS00ZGVmLTk1MzEtMzE0ZDU4MDM0ZTNlOTQ2YzRjY2YtMzQxMC00N2Y0LWJhMjQtZjE2MDUzMmM5YTFk",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-30 15:22:50.866 +11:00 [INF] User consented to scopes: ["openid","profile","website","api1"]
+2018-10-30 15:22:50.973 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "00484a0b-d90e-4acb-bd05-151717237ff8",
+  "Scopes": "openid profile website api1",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****zZtg"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****d280"
+    }
+  ],
+  "ActivityId": "0HLHU3T20892G:0000000A",
+  "TimeStamp": "2018-10-30T04:22:50Z",
+  "ProcessId": 11516,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:22:50.982 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "00484a0b-d90e-4acb-bd05-151717237ff8",
+  "ClientId": "mvc",
+  "RedirectUri": "http://localhost:5001/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-J6gBEaFssoTC_uGSCts2wsXTeuZdNXe0bsMrReri9FX96fk9PoMtUgkARBG0WjGEs84UNoBwDWGSt8ej1vchM1jH7SOwP8H4xmfP_yrnujepGzmzo0Eh3daWwCyepvI1p-WueQkWtRFhYpU7BjrQPX5P-ft_ZDPtSRkFPjTXNgZWfFVssSWNYvYVrMIWJpseXzZ6VutDYuqBhZZVjIJ_DgtBU9qdHPbzuA6Y5l-XmG2qKb10lKwNsXG9CG4tVvYYy04Qh2uZNk0jbYznGaZvupbsVdxx7rkjvxUTDWlCDGVOxjVUASkeCnMsYNZQmDCo",
+  "Scope": "openid profile website api1"
+}
+2018-10-30 15:22:50.998 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-30 15:22:51.094 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-30 15:22:51.131 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "mvc",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHU3T20892J:00000003",
+  "TimeStamp": "2018-10-30T04:22:51Z",
+  "ProcessId": 11516,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:22:51.177 +11:00 [INF] Token request validation success
+{
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "9e578b6794da3da7daacff302415bddf1f8dbb7729212dcc8a49ce390b57d280",
+  "Raw": {
+    "client_id": "mvc",
+    "client_secret": "***REDACTED***",
+    "code": "9e578b6794da3da7daacff302415bddf1f8dbb7729212dcc8a49ce390b57d280",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:5001/signin-oidc"
+  }
+}
+2018-10-30 15:22:51.224 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "mvc",
+  "ClientName": "MVC Client",
+  "Endpoint": "Token",
+  "Scopes": "openid profile website api1",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****rinQ"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****k8eA"
+    }
+  ],
+  "ActivityId": "0HLHU3T20892J:00000003",
+  "TimeStamp": "2018-10-30T04:22:51Z",
+  "ProcessId": 11516,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-30 15:22:51.245 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-30 15:22:51.295 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
