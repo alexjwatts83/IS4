@@ -1,0 +1,12 @@
+C:\Dev\Projects\IS4\IS4.is4aspid\bin\Debug\netcoreapp2.0\IS4.is4aspid.deps.json
+C:\Dev\Projects\IS4\IS4.is4aspid\bin\Debug\netcoreapp2.0\IS4.is4aspid.runtimeconfig.json
+C:\Dev\Projects\IS4\IS4.is4aspid\bin\Debug\netcoreapp2.0\IS4.is4aspid.runtimeconfig.dev.json
+C:\Dev\Projects\IS4\IS4.is4aspid\bin\Debug\netcoreapp2.0\IS4.is4aspid.dll
+C:\Dev\Projects\IS4\IS4.is4aspid\bin\Debug\netcoreapp2.0\IS4.is4aspid.pdb
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\IS4.is4aspid.csprojAssemblyReference.cache
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\IS4.is4aspid.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\IS4.is4aspid.AssemblyInfoInputs.cache
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\IS4.is4aspid.AssemblyInfo.cs
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\IS4.is4aspid.dll
+C:\Dev\Projects\IS4\IS4.is4aspid\obj\Debug\netcoreapp2.0\IS4.is4aspid.pdb
