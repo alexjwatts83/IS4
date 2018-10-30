@@ -54,6 +54,23 @@ namespace IS4.is4aspid
                 }
                 else
                 {
+                    //var result = userMgr.AddClaimsAsync(alice, new Claim[]{
+                    //    new Claim("about_access", "true")
+                    //}).Result;
+                    //if (!result.Succeeded)
+                    //{
+                    //    throw new Exception(result.Errors.First().Description);
+                    //}
+                    //else
+                    //{
+                    //    Console.WriteLine("alice about_access added");
+                    //}
+
+                    var claims = userMgr.GetClaimsAsync(alice);
+                    foreach (var claim in claims.Result)
+                    {
+                        Console.WriteLine($"{claim.Type} = {claim.Value}");
+                    }
                     Console.WriteLine("alice already exists");
                 }
 
@@ -88,7 +105,59 @@ namespace IS4.is4aspid
                 }
                 else
                 {
+                    var result = userMgr.AddClaimsAsync(bob, new Claim[]{
+                        new Claim("cancel_access", "true")
+                    }).Result;
+                    if (!result.Succeeded)
+                    {
+                        throw new Exception(result.Errors.First().Description);
+                    }
+                    else
+                    {
+                        Console.WriteLine("bob cancel_access added");
+                    }
+                    var claims = userMgr.GetClaimsAsync(bob);
+                    foreach (var claim in claims.Result)
+                    {
+                        Console.WriteLine($"{claim.Type} = {claim.Value}");
+                    }
                     Console.WriteLine("bob already exists");
+                }
+
+                var alex = userMgr.FindByNameAsync("alex").Result;
+                if (alex == null)
+                {
+                    alex = new ApplicationUser
+                    {
+                        UserName = "alex"
+                    };
+                    var result = userMgr.CreateAsync(alex, "Pass123$").Result;
+                    if (!result.Succeeded)
+                    {
+                        throw new Exception(result.Errors.First().Description);
+                    }
+
+                    result = userMgr.AddClaimsAsync(alex, new Claim[]{
+                        new Claim(JwtClaimTypes.Name, "Alex Watts"),
+                        new Claim(JwtClaimTypes.GivenName, "Alex"),
+                        new Claim(JwtClaimTypes.FamilyName, "Watts"),
+                        new Claim(JwtClaimTypes.Email, "alex.watts@minlog.com.au"),
+                        new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
+                        new Claim(JwtClaimTypes.WebSite, "http://alex.com"),
+                        new Claim(JwtClaimTypes.Address, @"{ 'street_address': 'One Hacker Way', 'locality': 'Heidelberg', 'postal_code': 69118, 'country': 'Germany' }", IdentityServer4.IdentityServerConstants.ClaimValueTypes.Json),
+                        new Claim("location", "somewhere else"),
+                        new Claim("admin_access", "true")
+                    }).Result;
+                    if (!result.Succeeded)
+                    {
+                        throw new Exception(result.Errors.First().Description);
+                    }
+                    Console.WriteLine("alex created");
+                }
+                else
+                {
+                    //var
+                    Console.WriteLine("alex already exists");
                 }
             }
         }

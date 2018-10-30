@@ -50,11 +50,19 @@ namespace Is4.MvcClient
 
                     options.Scope.Add("api1");
                     options.Scope.Add("website");
+                    options.Scope.Add("email");
+                    options.Scope.Add("location");
+                    options.Scope.Add("admin_access");
+                    options.Scope.Add("about_access");
+                    options.Scope.Add("cancel_access");
                 });
 
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("website", @"http://bob.com"));
+                options.AddPolicy("admin_access", policy => policy.RequireClaim("admin_access"));
+                options.AddPolicy("cancel_access", policy => policy.RequireClaim("cancel_access"));
+                options.AddPolicy("about_access", policy => policy.RequireClaim("about_access"));
             });
         }
 

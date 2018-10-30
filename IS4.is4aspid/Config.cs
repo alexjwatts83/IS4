@@ -22,6 +22,30 @@ namespace IS4.is4aspid
                     UserClaims = {"website"},
                     DisplayName = "users website"
                 },
+                new IdentityResource
+                {
+                    Name = "location",
+                    UserClaims = {"location"},
+                    DisplayName = "users location"
+                },
+                new IdentityResource
+                {
+                    Name = "admin_access",
+                    UserClaims = {"admin_access"},
+                    DisplayName = "users admin_access"
+                },
+                new IdentityResource
+                {
+                    Name = "about_access",
+                    UserClaims = {"about_access"},
+                    DisplayName = "users about_access"
+                },
+                new IdentityResource
+                {
+                    Name = "cancel_access",
+                    UserClaims = {"cancel_access"},
+                    DisplayName = "users cancel_access"
+                },
             };
         }
 
@@ -63,7 +87,8 @@ namespace IS4.is4aspid
                     PostLogoutRedirectUris = {"http://localhost:5001/signout-callback-oidc"},
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = {"openid", "profile", "api1", "website"},
+                    AllowedScopes = {"openid", "profile", "api1", "website", "email", "location", "admin_access", "about_access", "cancel_access"},
+                    //AllowedScopes = {"openid", "profile", "api1", "website", "email", "location"},
                     AlwaysIncludeUserClaimsInIdToken = true
                 },
 
