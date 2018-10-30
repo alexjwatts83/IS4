@@ -60,9 +60,16 @@ namespace Is4.MvcClient
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("website", @"http://bob.com"));
-                options.AddPolicy("admin_access", policy => policy.RequireClaim("admin_access"));
-                options.AddPolicy("cancel_access", policy => policy.RequireClaim("cancel_access"));
-                options.AddPolicy("about_access", policy => policy.RequireClaim("about_access"));
+                options.AddPolicy("CanAccessAbout", policy =>
+                {
+                    policy.RequireAssertion(context =>
+                        context.User.HasClaim(claim => (claim.Type == "admin_access" || claim.Type == "about_access")));
+                });
+                options.AddPolicy("CanAccessContact", policy =>
+                {
+                    policy.RequireAssertion(context =>
+                        context.User.HasClaim(claim => (claim.Type == "admin_access" || claim.Type == "cancel_access")));
+                });
             });
         }
 

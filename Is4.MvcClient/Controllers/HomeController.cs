@@ -22,10 +22,17 @@ namespace Is4.MvcClient.Controllers
 
             return View();
         }
-        [Authorize(Policy = "EmployeeOnly")]
+        [Authorize(Policy = "CanAccessAbout")]
         public IActionResult About()
         {
-            ViewData["Message"] = "Secure page.";
+            ViewData["Message"] = "About page.";
+
+            return View();
+        }
+        [Authorize(Policy = "CanAccessContact")]
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Contact page.";
 
             return View();
         }

@@ -88,8 +88,8 @@ namespace IS4.is4aspid
 
                     AllowOfflineAccess = true,
                     AllowedScopes = {"openid", "profile", "api1", "website", "email", "location", "admin_access", "about_access", "cancel_access"},
-                    //AllowedScopes = {"openid", "profile", "api1", "website", "email", "location"},
-                    AlwaysIncludeUserClaimsInIdToken = true
+                    AlwaysIncludeUserClaimsInIdToken = true,
+                    RequireConsent = false
                 },
 
                 // SPA client using implicit flow

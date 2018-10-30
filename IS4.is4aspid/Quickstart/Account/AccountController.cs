@@ -256,9 +256,27 @@ namespace IdentityServer4.Quickstart.UI
             return View("LoggedOut", vm);
         }
 
+        public async Task<IActionResult> AccessDenied(string returnUrl)
+        {
+            // build a model so we know what to show on the login page
+            var vm = await BuildAccessDeniedViewModelAsync(returnUrl);
+
+            return View(vm);
+        }
+
         /*****************************************/
         /* helper APIs for the AccountController */
         /*****************************************/
+        private async Task<AccessDeniedViewModel> BuildAccessDeniedViewModelAsync(string returnUrl)
+        {
+            var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
+
+            return new AccessDeniedViewModel
+            {
+                ClientName = context.ClientId,
+                ReturnUrl = context.RedirectUri
+            };
+        }
         private async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl)
         {
             var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
