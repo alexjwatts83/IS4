@@ -46,6 +46,18 @@ namespace IS4.is4aspid
                     UserClaims = {"cancel_access"},
                     DisplayName = "users cancel_access"
                 },
+                new IdentityResource
+                {
+                    Name = "general_access",
+                    UserClaims = {"general_access"},
+                    DisplayName = "users general_access"
+                },
+                new IdentityResource
+                {
+                    Name = "general_access_loc",
+                    UserClaims = {"general_access_loc"},
+                    DisplayName = "users general_access_loc"
+                },
             };
         }
 
@@ -87,7 +99,11 @@ namespace IS4.is4aspid
                     PostLogoutRedirectUris = {"http://localhost:5001/signout-callback-oidc"},
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = {"openid", "profile", "api1", "website", "email", "location", "admin_access", "about_access", "cancel_access"},
+                    AllowedScopes =
+                    {
+                        "openid", "profile", "api1", "website", "email", "location", "admin_access", "about_access",
+                        "cancel_access"
+                    },
                     AlwaysIncludeUserClaimsInIdToken = true,
                     RequireConsent = false
                 },
@@ -114,7 +130,44 @@ namespace IS4.is4aspid
                     AllowedCorsOrigins = {"http://localhost:5002"},
 
                     AllowedScopes = {"openid", "profile", "api1"}
-                }
+                },
+
+                // MVC client using hybrid flow
+                new Client
+                {
+                    ClientId = "fleet",
+                    ClientName = "Fleet Monitoring",
+
+                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+                    ClientSecrets = {new Secret("645A794F-5FE2-4A52-A0EC-DDB8DADE121F".Sha256())},
+
+                    RedirectUris = {"http://localhost:54250/signin-oidc"},
+                    FrontChannelLogoutUri = "http://localhost:54250/signout-oidc",
+                    PostLogoutRedirectUris = {"http://localhost:54250/signout-callback-oidc"},
+
+                    AllowedScopes = {"openid", "profile", "admin_access", "general_access"},
+                    AlwaysIncludeUserClaimsInIdToken = true,
+                    RequireConsent = false,
+                    ClientUri = "http://localhost:54250/"
+                },
+
+                new Client
+                {
+                    ClientId = "location",
+                    ClientName = "Location Monitoring",
+
+                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+                    ClientSecrets = {new Secret("472E9365-60CA-42AD-AA5F-FD1B69099E2D".Sha256())},
+
+                    RedirectUris = {"http://localhost:53821/signin-oidc"},
+                    FrontChannelLogoutUri = "http://localhost:53821/signout-oidc",
+                    PostLogoutRedirectUris = {"http://localhost:53821/signout-callback-oidc"},
+
+                    AllowedScopes = {"openid", "profile", "admin_access", "general_access_loc"},
+                    AlwaysIncludeUserClaimsInIdToken = true,
+                    RequireConsent = false,
+                    ClientUri = "http://localhost:53821/"
+                },
             };
         }
     }

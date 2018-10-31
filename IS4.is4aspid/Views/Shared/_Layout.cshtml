@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -31,7 +31,7 @@
                 <a href="~/">
                     <span class="navbar-brand">
                         <img src="~/icon.png" class="icon-banner">
-                        IdentityServer4
+                        MineSuite Portal
                     </span>
                 </a>
             </div>
@@ -44,6 +44,14 @@
                         <ul class="dropdown-menu">
                             <li><a asp-action="Logout" asp-controller="Account">Logout</a></li>
                         </ul>
+                    </li>
+                </ul>
+            }
+            else
+            {
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a asp-action="Login" asp-controller="Account">Login</a>
                     </li>
                 </ul>
             }

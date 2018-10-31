@@ -159,6 +159,48 @@ namespace IS4.is4aspid
                     //var
                     Console.WriteLine("alex already exists");
                 }
+
+                AddUser("fleetgen", "General", "Fleet", "Pass123$", false, "general_access", userMgr);
+                AddUser("fleetadmin", "Admin", "Fleet", "Pass123$", true, "general_access", userMgr);
+                AddUser("locgen", "General", "Location", "Pass123$", false, "general_access_loc", userMgr);
+                AddUser("locadmin", "Admin", "Location", "Pass123$", true, "general_access_loc", userMgr);
+            }
+        }
+
+        private static void AddUser(string userName,string familyName,string firstName, string password,bool hasAdminAccess,string genAccess, UserManager<ApplicationUser> userMgr)
+        {
+            var alex = userMgr.FindByNameAsync(userName).Result;
+            if (alex == null)
+            {
+                alex = new ApplicationUser
+                {
+                    UserName = userName
+                };
+                var result = userMgr.CreateAsync(alex, password).Result;
+                if (!result.Succeeded)
+                {
+                    throw new Exception(result.Errors.First().Description);
+                }
+
+                result = userMgr.AddClaimsAsync(alex, new Claim[]{
+                    new Claim(JwtClaimTypes.Name, $"{firstName} {familyName}"),
+                    new Claim(JwtClaimTypes.GivenName, firstName),
+                    new Claim(JwtClaimTypes.FamilyName, familyName),
+                    new Claim(JwtClaimTypes.Email, $"{firstName.ToLower()}.{familyName.ToLower()}@minlog.com.au"),
+                    new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
+                    new Claim(JwtClaimTypes.WebSite, $"http://{firstName}.com"),
+                    new Claim(hasAdminAccess ? "admin_access" : genAccess, "true")
+                }).Result;
+                if (!result.Succeeded)
+                {
+                    throw new Exception(result.Errors.First().Description);
+                }
+                Console.WriteLine($"{userName} created");
+            }
+            else
+            {
+                //var
+                Console.WriteLine($"{userName} already exists");
             }
         }
     }
