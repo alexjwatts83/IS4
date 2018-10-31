@@ -14,6 +14,7 @@ using System;
 
 namespace IS4.is4aspid
 {
+
     public class Startup
     {
         public IConfiguration Configuration { get; }

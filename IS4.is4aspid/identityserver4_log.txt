@@ -15201,3 +15201,650 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
 }
 2018-10-31 14:40:33.022 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
 2018-10-31 14:40:33.033 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website general_access preferred_username
+2018-10-31 14:51:11.687 +11:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-10-31 14:51:13.925 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:13.951 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:18.757 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:18.761 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:27.959 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:27.961 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:29.231 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:29.234 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:29.444 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-31 14:51:29.450 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-31 14:51:29.453 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-31 14:51:29.487 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "b96ef1e1-60b0-4d6c-ad83-71af45ea70b9",
+  "DisplayName": "Location General",
+  "ActivityId": "0HLHUSGCOFKEB:00000005",
+  "TimeStamp": "2018-10-31T03:51:29Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 14:51:29.695 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-31 14:51:29.763 +11:00 [INF] Successful signout callback.
+2018-10-31 14:51:40.949 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-31 14:51:40.958 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "fleetadmin",
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "DisplayName": "fleetadmin",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHUSGCOFKEB:00000008",
+  "TimeStamp": "2018-10-31T03:51:40Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 14:51:40.970 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 14:51:40.973 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:19:55.349 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-31 15:19:55.518 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-31 15:19:55.645 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-31 15:19:55.741 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:54250/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV9EKTUvo3HpytM5FPtfnigq2M4DOs8XGN7V5YUO9gZ4UEgGgeziGigx4im2yWASlY07kN7wnT8QUSBC77E2onlsHTA2FN4y-z6LKVs6zYCCEnzjk3B11Wokf9FA1KMKW0HhCbXPlg6OqPuTgpxGiwr5q9holPiD-W94UcT39jEBsn2Ebb-Cc_90zvDwMyiUKgAzBvK8qE3t7tOuv-La6AN4B_kbxKeNQi2fOlBifcUQAMtB8x5VERT29V9xawysYxYBIcuOsMrjaFz2OGc1VpGIXVfDyGRLuo0CZE6CdMPbRA",
+  "Nonce": "636765563955867504.MDJmNTdiYTUtMTMwZS00YTExLTg2ZjgtYTNjYTI0YWE5YzgxNzY1OTUyMWYtM2E1Ny00MDJkLTkzODktN2IzYjIyMmU4YjI1",
+  "Raw": {
+    "client_id": "fleet",
+    "redirect_uri": "http://localhost:54250/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access",
+    "response_mode": "form_post",
+    "nonce": "636765563955867504.MDJmNTdiYTUtMTMwZS00YTExLTg2ZjgtYTNjYTI0YWE5YzgxNzY1OTUyMWYtM2E1Ny00MDJkLTkzODktN2IzYjIyMmU4YjI1",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV9EKTUvo3HpytM5FPtfnigq2M4DOs8XGN7V5YUO9gZ4UEgGgeziGigx4im2yWASlY07kN7wnT8QUSBC77E2onlsHTA2FN4y-z6LKVs6zYCCEnzjk3B11Wokf9FA1KMKW0HhCbXPlg6OqPuTgpxGiwr5q9holPiD-W94UcT39jEBsn2Ebb-Cc_90zvDwMyiUKgAzBvK8qE3t7tOuv-La6AN4B_kbxKeNQi2fOlBifcUQAMtB8x5VERT29V9xawysYxYBIcuOsMrjaFz2OGc1VpGIXVfDyGRLuo0CZE6CdMPbRA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:19:55.759 +11:00 [INF] Showing login: User is not authenticated
+2018-10-31 15:20:10.052 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-31 15:20:10.056 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "fleetgen",
+  "SubjectId": "ea0687c1-2c7f-4fac-91f3-5e13875dd0f3",
+  "DisplayName": "fleetgen",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHUSGCOFKEG:00000004",
+  "TimeStamp": "2018-10-31T04:20:10Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:20:10.065 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:20:10.068 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:20:10.073 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-31 15:20:10.086 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:54250/signin-oidc"
+  ],
+  "SubjectId": "ea0687c1-2c7f-4fac-91f3-5e13875dd0f3",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV9EKTUvo3HpytM5FPtfnigq2M4DOs8XGN7V5YUO9gZ4UEgGgeziGigx4im2yWASlY07kN7wnT8QUSBC77E2onlsHTA2FN4y-z6LKVs6zYCCEnzjk3B11Wokf9FA1KMKW0HhCbXPlg6OqPuTgpxGiwr5q9holPiD-W94UcT39jEBsn2Ebb-Cc_90zvDwMyiUKgAzBvK8qE3t7tOuv-La6AN4B_kbxKeNQi2fOlBifcUQAMtB8x5VERT29V9xawysYxYBIcuOsMrjaFz2OGc1VpGIXVfDyGRLuo0CZE6CdMPbRA",
+  "Nonce": "636765563955867504.MDJmNTdiYTUtMTMwZS00YTExLTg2ZjgtYTNjYTI0YWE5YzgxNzY1OTUyMWYtM2E1Ny00MDJkLTkzODktN2IzYjIyMmU4YjI1",
+  "SessionId": "3f55c38b07bf88145be57393a11d2d14",
+  "Raw": {
+    "client_id": "fleet",
+    "redirect_uri": "http://localhost:54250/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access",
+    "response_mode": "form_post",
+    "nonce": "636765563955867504.MDJmNTdiYTUtMTMwZS00YTExLTg2ZjgtYTNjYTI0YWE5YzgxNzY1OTUyMWYtM2E1Ny00MDJkLTkzODktN2IzYjIyMmU4YjI1",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV9EKTUvo3HpytM5FPtfnigq2M4DOs8XGN7V5YUO9gZ4UEgGgeziGigx4im2yWASlY07kN7wnT8QUSBC77E2onlsHTA2FN4y-z6LKVs6zYCCEnzjk3B11Wokf9FA1KMKW0HhCbXPlg6OqPuTgpxGiwr5q9holPiD-W94UcT39jEBsn2Ebb-Cc_90zvDwMyiUKgAzBvK8qE3t7tOuv-La6AN4B_kbxKeNQi2fOlBifcUQAMtB8x5VERT29V9xawysYxYBIcuOsMrjaFz2OGc1VpGIXVfDyGRLuo0CZE6CdMPbRA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:20:10.243 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "ea0687c1-2c7f-4fac-91f3-5e13875dd0f3",
+  "Scopes": "openid profile admin_access general_access",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****r-Mw"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****1a37"
+    }
+  ],
+  "ActivityId": "0HLHUSGCOFKEG:00000005",
+  "TimeStamp": "2018-10-31T04:20:10Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:20:10.253 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "ea0687c1-2c7f-4fac-91f3-5e13875dd0f3",
+  "ClientId": "fleet",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV9EKTUvo3HpytM5FPtfnigq2M4DOs8XGN7V5YUO9gZ4UEgGgeziGigx4im2yWASlY07kN7wnT8QUSBC77E2onlsHTA2FN4y-z6LKVs6zYCCEnzjk3B11Wokf9FA1KMKW0HhCbXPlg6OqPuTgpxGiwr5q9holPiD-W94UcT39jEBsn2Ebb-Cc_90zvDwMyiUKgAzBvK8qE3t7tOuv-La6AN4B_kbxKeNQi2fOlBifcUQAMtB8x5VERT29V9xawysYxYBIcuOsMrjaFz2OGc1VpGIXVfDyGRLuo0CZE6CdMPbRA",
+  "Scope": "openid profile admin_access general_access"
+}
+2018-10-31 15:20:10.270 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-31 15:20:10.390 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-31 15:20:10.425 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "fleet",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHUSGCOFKEF:00000003",
+  "TimeStamp": "2018-10-31T04:20:10Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:20:10.476 +11:00 [INF] Token request validation success
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "cca9cd523a48d3acd8808b84577620e2d36be131c6aecda5a42408c303c61a37",
+  "Raw": {
+    "client_id": "fleet",
+    "client_secret": "***REDACTED***",
+    "code": "cca9cd523a48d3acd8808b84577620e2d36be131c6aecda5a42408c303c61a37",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:54250/signin-oidc"
+  }
+}
+2018-10-31 15:20:10.529 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "Endpoint": "Token",
+  "Scopes": "openid profile admin_access general_access",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****K1aA"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****MqkA"
+    }
+  ],
+  "ActivityId": "0HLHUSGCOFKEF:00000003",
+  "TimeStamp": "2018-10-31T04:20:10Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:20:10.552 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-31 15:20:10.666 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website general_access preferred_username
+2018-10-31 15:21:07.544 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:21:07.547 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:21:07.550 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-31 15:21:07.581 +11:00 [INF] End session request validation success
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "SubjectId": "ea0687c1-2c7f-4fac-91f3-5e13875dd0f3",
+  "PostLogOutUri": "http://localhost:54250/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8E0tW6C6C6SLCoVBuVZS-C7NkMtUNXvHNOfrhzEvRWIQulf-6tHODpPw1KkOqulqHo8YTY0SjzNWKEowddQjjll3O4ZHRT4WFpWgynQRyQpiT29xlgIy98Ouh2QLgjn4Gbd1avohaLUn_S0z5-LNI7",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:54250/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA5NTk2MTAsImV4cCI6MTU0MDk1OTkxMCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiZmxlZXQiLCJub25jZSI6IjYzNjc2NTU2Mzk1NTg2NzUwNC5NREptTlRkaVlUVXRNVE13WlMwMFlURXhMVGcyWmpndFlUTmpZVEkwWVdFNVl6Z3hOelkxT1RVeU1XWXRNMkUxTnkwME1ESmtMVGt6T0RrdE4ySXpZakl5TW1VNFlqSTEiLCJpYXQiOjE1NDA5NTk2MTAsImF0X2hhc2giOiJ0Tjl2M3dROXd5TmJNMVBSTk0wVVJBIiwic2lkIjoiM2Y1NWMzOGIwN2JmODgxNDViZTU3MzkzYTExZDJkMTQiLCJzdWIiOiJlYTA2ODdjMS0yYzdmLTRmYWMtOTFmMy01ZTEzODc1ZGQwZjMiLCJhdXRoX3RpbWUiOjE1NDA5NTk2MTAsImlkcCI6ImxvY2FsIiwibmFtZSI6IkZsZWV0IEdlbmVyYWwiLCJnaXZlbl9uYW1lIjoiRmxlZXQiLCJmYW1pbHlfbmFtZSI6IkdlbmVyYWwiLCJ3ZWJzaXRlIjoiaHR0cDovL0ZsZWV0LmNvbSIsImdlbmVyYWxfYWNjZXNzIjoidHJ1ZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImZsZWV0Z2VuIiwiYW1yIjpbInB3ZCJdfQ.lGzBadmUwYhjk-x1KlI_2aoisj0_z2eAFLZ5lqt3SOSIsRDsEr1248i5-hsXg9zhYCh6_NDcJX0GD5fDzkkoAT2h-tHStuvsMFtpgU5he03ItAodp_9ivh5e8l5k7aSVJbSEmSE8w_Ra2OG_GZYa_u80MAelE32bWNG7RnJjI-17MdFYaUKunNF4UAMArrfnVu_e2kgr6TEuf2wIlciQAzavNKn9HxZOofZP_YYWD4FLk4tHWnf1fdg4tbI4CFkl5k_f-Ye0lW49I0Zla4kchl5ybZ24qiRMSbojtNoDDQI8jvrAZPS1CSN93eTKriixcnpHc2DkuEUQ3mUSVJK1aA",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8E0tW6C6C6SLCoVBuVZS-C7NkMtUNXvHNOfrhzEvRWIQulf-6tHODpPw1KkOqulqHo8YTY0SjzNWKEowddQjjll3O4ZHRT4WFpWgynQRyQpiT29xlgIy98Ouh2QLgjn4Gbd1avohaLUn_S0z5-LNI7",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:21:07.608 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:21:07.611 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:21:07.619 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-31 15:21:07.623 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-31 15:21:07.625 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-31 15:21:07.628 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "ea0687c1-2c7f-4fac-91f3-5e13875dd0f3",
+  "DisplayName": "Fleet General",
+  "ActivityId": "0HLHUSGCOFKEG:00000007",
+  "TimeStamp": "2018-10-31T04:21:07Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:21:07.665 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-31 15:21:07.670 +11:00 [INF] Successful signout callback.
+2018-10-31 15:21:09.328 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-31 15:21:09.332 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:54250/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-pnEtOS3JxtNlmBIlOjAhNZrdI9iHCNezMu-sC73otEUjkMgffyIE_B-Q_YkMalvb8rv_-Gi0FhM_iANFygvSkJ03yzdHlL8yiOLeUDtDIkE8e0eTNGokvIC3-RVMjFMAyA6e-oMwDag3egUxiHkn_DIyyorcTfmPlyzOwJYfJyYzKjwesW2wdZzbotNfNlZAo4LSOj1uA9bxCFgR-oMW6nftR6ZT1Sjn6nJIuwveINrp2DcciwAppWzQsue5pj897LwaOd-9R-D_A9v_vbqUYi_KEHgzqlRMfalWgo5oxKA",
+  "Nonce": "636765564693146063.MWUwMWQyZmUtYWQyMC00OGY1LTg4NzUtOTQzM2E0YzgxNGZiYWMwMjNiNTMtZDM0Zi00YjczLTlmZDYtNWU5NDQ4ZGExNGU2",
+  "Raw": {
+    "client_id": "fleet",
+    "redirect_uri": "http://localhost:54250/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access",
+    "response_mode": "form_post",
+    "nonce": "636765564693146063.MWUwMWQyZmUtYWQyMC00OGY1LTg4NzUtOTQzM2E0YzgxNGZiYWMwMjNiNTMtZDM0Zi00YjczLTlmZDYtNWU5NDQ4ZGExNGU2",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-pnEtOS3JxtNlmBIlOjAhNZrdI9iHCNezMu-sC73otEUjkMgffyIE_B-Q_YkMalvb8rv_-Gi0FhM_iANFygvSkJ03yzdHlL8yiOLeUDtDIkE8e0eTNGokvIC3-RVMjFMAyA6e-oMwDag3egUxiHkn_DIyyorcTfmPlyzOwJYfJyYzKjwesW2wdZzbotNfNlZAo4LSOj1uA9bxCFgR-oMW6nftR6ZT1Sjn6nJIuwveINrp2DcciwAppWzQsue5pj897LwaOd-9R-D_A9v_vbqUYi_KEHgzqlRMfalWgo5oxKA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:21:09.339 +11:00 [INF] Showing login: User is not authenticated
+2018-10-31 15:21:19.203 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-31 15:21:19.209 +11:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "fleetadmin",
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "DisplayName": "fleetadmin",
+  "Endpoint": "UI",
+  "ActivityId": "0HLHUSGCOFKEG:0000000B",
+  "TimeStamp": "2018-10-31T04:21:19Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:21:19.223 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:21:19.226 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:21:19.229 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-10-31 15:21:19.234 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:54250/signin-oidc"
+  ],
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-pnEtOS3JxtNlmBIlOjAhNZrdI9iHCNezMu-sC73otEUjkMgffyIE_B-Q_YkMalvb8rv_-Gi0FhM_iANFygvSkJ03yzdHlL8yiOLeUDtDIkE8e0eTNGokvIC3-RVMjFMAyA6e-oMwDag3egUxiHkn_DIyyorcTfmPlyzOwJYfJyYzKjwesW2wdZzbotNfNlZAo4LSOj1uA9bxCFgR-oMW6nftR6ZT1Sjn6nJIuwveINrp2DcciwAppWzQsue5pj897LwaOd-9R-D_A9v_vbqUYi_KEHgzqlRMfalWgo5oxKA",
+  "Nonce": "636765564693146063.MWUwMWQyZmUtYWQyMC00OGY1LTg4NzUtOTQzM2E0YzgxNGZiYWMwMjNiNTMtZDM0Zi00YjczLTlmZDYtNWU5NDQ4ZGExNGU2",
+  "SessionId": "1e1f63c60713ca85eb513ab951bd28a4",
+  "Raw": {
+    "client_id": "fleet",
+    "redirect_uri": "http://localhost:54250/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access",
+    "response_mode": "form_post",
+    "nonce": "636765564693146063.MWUwMWQyZmUtYWQyMC00OGY1LTg4NzUtOTQzM2E0YzgxNGZiYWMwMjNiNTMtZDM0Zi00YjczLTlmZDYtNWU5NDQ4ZGExNGU2",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV-pnEtOS3JxtNlmBIlOjAhNZrdI9iHCNezMu-sC73otEUjkMgffyIE_B-Q_YkMalvb8rv_-Gi0FhM_iANFygvSkJ03yzdHlL8yiOLeUDtDIkE8e0eTNGokvIC3-RVMjFMAyA6e-oMwDag3egUxiHkn_DIyyorcTfmPlyzOwJYfJyYzKjwesW2wdZzbotNfNlZAo4LSOj1uA9bxCFgR-oMW6nftR6ZT1Sjn6nJIuwveINrp2DcciwAppWzQsue5pj897LwaOd-9R-D_A9v_vbqUYi_KEHgzqlRMfalWgo5oxKA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:21:19.266 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "Scopes": "openid profile admin_access general_access",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****R4xw"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****3a8c"
+    }
+  ],
+  "ActivityId": "0HLHUSGCOFKEG:0000000C",
+  "TimeStamp": "2018-10-31T04:21:19Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:21:19.278 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "ClientId": "fleet",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV-pnEtOS3JxtNlmBIlOjAhNZrdI9iHCNezMu-sC73otEUjkMgffyIE_B-Q_YkMalvb8rv_-Gi0FhM_iANFygvSkJ03yzdHlL8yiOLeUDtDIkE8e0eTNGokvIC3-RVMjFMAyA6e-oMwDag3egUxiHkn_DIyyorcTfmPlyzOwJYfJyYzKjwesW2wdZzbotNfNlZAo4LSOj1uA9bxCFgR-oMW6nftR6ZT1Sjn6nJIuwveINrp2DcciwAppWzQsue5pj897LwaOd-9R-D_A9v_vbqUYi_KEHgzqlRMfalWgo5oxKA",
+  "Scope": "openid profile admin_access general_access"
+}
+2018-10-31 15:21:19.283 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-31 15:21:19.333 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-31 15:21:19.337 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "fleet",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHUSGCOFKEF:00000005",
+  "TimeStamp": "2018-10-31T04:21:19Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:21:19.355 +11:00 [INF] Token request validation success
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "36750ae9df286e88edfacebf9e702e9d90865455a31712824cb0f3042c213a8c",
+  "Raw": {
+    "client_id": "fleet",
+    "client_secret": "***REDACTED***",
+    "code": "36750ae9df286e88edfacebf9e702e9d90865455a31712824cb0f3042c213a8c",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:54250/signin-oidc"
+  }
+}
+2018-10-31 15:21:19.373 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "Endpoint": "Token",
+  "Scopes": "openid profile admin_access general_access",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****6rBw"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****XKGw"
+    }
+  ],
+  "ActivityId": "0HLHUSGCOFKEF:00000005",
+  "TimeStamp": "2018-10-31T04:21:19Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:21:19.386 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-31 15:21:19.397 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website admin_access preferred_username
+2018-10-31 15:22:03.901 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-31 15:22:04.049 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-31 15:22:04.151 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:22:04.153 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:22:04.156 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-31 15:22:04.159 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "location",
+  "ClientName": "Location Monitoring",
+  "RedirectUri": "http://localhost:53821/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:53821/signin-oidc"
+  ],
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access_loc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV92_gPHUsTHmRfOdk1y85K9eHqJS4NepuIFdQuxjRlRSSJc0NVC5KBEFQawWMwjVbF6gTejGpBWN3pT6-WI8Zi_A_KqjKSm0eBhdmElkTGtdetPiU00jYwO6lXtFxnOa495-GJ3uney6ZBufeuEWUVFUdijWO1S4GQ-OV2Wz1lx4t8lMhhXNg8Tm9dfmjhwJKizpAZ5KlWAogUoU4gBF0SrX4A8cp5QEhh-lGiWJwSYsLTEWZxTz2I2wRfZmgzhowXYo4SbxVXeeewKfzuO3iY17fBfXAbPz8jW_epKVD2QQA",
+  "Nonce": "636765565241100828.M2MzMDcxZjEtNmQ3NS00MzRlLTgzNzYtODE4MGQzN2VmZGRmYmIzYTQ0MzQtMDU5Zi00ZGMwLWEyNjItMTI4ODJmY2ExYTli",
+  "SessionId": "1e1f63c60713ca85eb513ab951bd28a4",
+  "Raw": {
+    "client_id": "location",
+    "redirect_uri": "http://localhost:53821/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access_loc",
+    "response_mode": "form_post",
+    "nonce": "636765565241100828.M2MzMDcxZjEtNmQ3NS00MzRlLTgzNzYtODE4MGQzN2VmZGRmYmIzYTQ0MzQtMDU5Zi00ZGMwLWEyNjItMTI4ODJmY2ExYTli",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV92_gPHUsTHmRfOdk1y85K9eHqJS4NepuIFdQuxjRlRSSJc0NVC5KBEFQawWMwjVbF6gTejGpBWN3pT6-WI8Zi_A_KqjKSm0eBhdmElkTGtdetPiU00jYwO6lXtFxnOa495-GJ3uney6ZBufeuEWUVFUdijWO1S4GQ-OV2Wz1lx4t8lMhhXNg8Tm9dfmjhwJKizpAZ5KlWAogUoU4gBF0SrX4A8cp5QEhh-lGiWJwSYsLTEWZxTz2I2wRfZmgzhowXYo4SbxVXeeewKfzuO3iY17fBfXAbPz8jW_epKVD2QQA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:22:04.187 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "location",
+  "ClientName": "Location Monitoring",
+  "RedirectUri": "http://localhost:53821/signin-oidc",
+  "Endpoint": "Authorize",
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "Scopes": "openid profile admin_access general_access_loc",
+  "GrantType": "hybrid",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****kR3Q"
+    },
+    {
+      "TokenType": "code",
+      "TokenValue": "****03a7"
+    }
+  ],
+  "ActivityId": "0HLHUSGCOFKEI:00000001",
+  "TimeStamp": "2018-10-31T04:22:04Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:22:04.195 +11:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "ClientId": "location",
+  "RedirectUri": "http://localhost:53821/signin-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV92_gPHUsTHmRfOdk1y85K9eHqJS4NepuIFdQuxjRlRSSJc0NVC5KBEFQawWMwjVbF6gTejGpBWN3pT6-WI8Zi_A_KqjKSm0eBhdmElkTGtdetPiU00jYwO6lXtFxnOa495-GJ3uney6ZBufeuEWUVFUdijWO1S4GQ-OV2Wz1lx4t8lMhhXNg8Tm9dfmjhwJKizpAZ5KlWAogUoU4gBF0SrX4A8cp5QEhh-lGiWJwSYsLTEWZxTz2I2wRfZmgzhowXYo4SbxVXeeewKfzuO3iY17fBfXAbPz8jW_epKVD2QQA",
+  "Scope": "openid profile admin_access general_access_loc"
+}
+2018-10-31 15:22:04.198 +11:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-31 15:22:04.340 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-10-31 15:22:04.343 +11:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "location",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLHUSGCOFKEH:00000003",
+  "TimeStamp": "2018-10-31T04:22:04Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:22:04.358 +11:00 [INF] Token request validation success
+{
+  "ClientId": "location",
+  "ClientName": "Location Monitoring",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "e734c6e82d728bc6ed6aa8917ef71c3904259ce2ac34efaac2607b80402303a7",
+  "Raw": {
+    "client_id": "location",
+    "client_secret": "***REDACTED***",
+    "code": "e734c6e82d728bc6ed6aa8917ef71c3904259ce2ac34efaac2607b80402303a7",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://localhost:53821/signin-oidc"
+  }
+}
+2018-10-31 15:22:04.375 +11:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "location",
+  "ClientName": "Location Monitoring",
+  "Endpoint": "Token",
+  "Scopes": "openid profile admin_access general_access_loc",
+  "GrantType": "authorization_code",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****f9ng"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****pD3w"
+    }
+  ],
+  "ActivityId": "0HLHUSGCOFKEH:00000003",
+  "TimeStamp": "2018-10-31T04:22:04Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:22:04.391 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-10-31 15:22:04.401 +11:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website admin_access preferred_username
+2018-10-31 15:23:29.750 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:23:29.753 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:23:29.756 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-10-31 15:23:29.769 +11:00 [INF] End session request validation success
+{
+  "ClientId": "location",
+  "ClientName": "Location Monitoring",
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "PostLogOutUri": "http://localhost:53821/signout-callback-oidc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV8E57Ud1khqPjRDEbKfXQDsCiiVOgebWPwOnuhRopwTH_BJlIHIhY3Ce8KU1648BqOVow7dLsl5L-IaSGN3H73FoisYx0sp2Le2JzwurjbmmyP0xxRLOE0Y3M-2f6MGm1QmRBQOG0Q-mtyxhEm6o844",
+  "Raw": {
+    "post_logout_redirect_uri": "http://localhost:53821/signout-callback-oidc",
+    "id_token_hint": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgwOTJmYTBjZmJmZDFhMTc1NjllYzYwMGFiM2JjY2VlIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDA5NTk3MjQsImV4cCI6MTU0MDk2MDAyNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoibG9jYXRpb24iLCJub25jZSI6IjYzNjc2NTU2NTI0MTEwMDgyOC5NMk16TURjeFpqRXRObVEzTlMwME16UmxMVGd6TnpZdE9ERTRNR1F6TjJWbVpHUm1ZbUl6WVRRME16UXRNRFU1WmkwMFpHTXdMV0V5TmpJdE1USTRPREptWTJFeFlUbGkiLCJpYXQiOjE1NDA5NTk3MjQsImF0X2hhc2giOiJMU05hOFZjT0E0MmRwR3BZQmY2dXd3Iiwic2lkIjoiMWUxZjYzYzYwNzEzY2E4NWViNTEzYWI5NTFiZDI4YTQiLCJzdWIiOiIzOGZlOWE4ZS0wZTZmLTQ3ZWEtYjQxNi1jMjMxYzFhMGQ3YjQiLCJhdXRoX3RpbWUiOjE1NDA5NTk2NzksImlkcCI6ImxvY2FsIiwibmFtZSI6IkZsZWV0IEFkbWluIiwiZ2l2ZW5fbmFtZSI6IkZsZWV0IiwiZmFtaWx5X25hbWUiOiJBZG1pbiIsIndlYnNpdGUiOiJodHRwOi8vRmxlZXQuY29tIiwiYWRtaW5fYWNjZXNzIjoidHJ1ZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImZsZWV0YWRtaW4iLCJhbXIiOlsicHdkIl19.fHsioI_rsptdXuvJjvgYV9TDnpNRQYnGl659vVYXu-fdpXLNp5HPH2B58nZtYSJnCfuFdfr-AKBzMi-vQIDC-dVsdOEIJ7bSLwL_Jplnx7NOBVSepKEyC57Zq9tpC8rD1usfeeqnuKNsbX2aGhHg4bjohLEXUv-3gfdIjcqxF8wUFppAp6T2PcAEJ-SLG1BlL1gxohPOYnhDVI_xg-HAMx6z0lfFGOwM4SStyJhr2YByttuxwCN3kuF2KyKZx0_hVOVL9Gi8id2JV_XVshIA4TGp8h7nmrlrXwIGCXN7AXH8ngYxX0BBCjbrXAhg5IRFpHxFYmNCct4DbmR8sCf9ng",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV8E57Ud1khqPjRDEbKfXQDsCiiVOgebWPwOnuhRopwTH_BJlIHIhY3Ce8KU1648BqOVow7dLsl5L-IaSGN3H73FoisYx0sp2Le2JzwurjbmmyP0xxRLOE0Y3M-2f6MGm1QmRBQOG0Q-mtyxhEm6o844",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:23:29.786 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:23:29.789 +11:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-10-31 15:23:29.793 +11:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-31 15:23:29.797 +11:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-31 15:23:29.801 +11:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-31 15:23:29.805 +11:00 [INF] {
+  "Name": "User Logout Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1002,
+  "SubjectId": "38fe9a8e-0e6f-47ea-b416-c231c1a0d7b4",
+  "DisplayName": "Fleet Admin",
+  "ActivityId": "0HLHUSGCOFKEJ:00000002",
+  "TimeStamp": "2018-10-31T04:23:29Z",
+  "ProcessId": 30948,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-10-31 15:23:29.870 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-10-31 15:23:29.873 +11:00 [INF] Successful signout callback.
+2018-10-31 15:23:48.617 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-31 15:23:48.621 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "fleet",
+  "ClientName": "Fleet Monitoring",
+  "RedirectUri": "http://localhost:54250/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:54250/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV85pZi4dKsqBUWxvZj31IlwAdP3vPybPf6HOxhnivR4f6CPYtQ76zevXaZJgXjHHswcTnw1_rNjyITfD_LoGOli0YEWR3m2bUz6r7wnhiB8yKQ155NAuX2VEv0krUTroU9cGKYpWm0b-wL680mz8iLbciukdCbDZK-EZlPQ0u9dZCKoYRB72Yr21Vfcp9Yxg0p5Z_8dGThyKN2fiNzYh2l3nEu5RWBHhBizVjumpmhS4JUhf7eRSv-nOtOiiZVN-y0kXqwBPq1ZnbaQGvlyKmjffsh8bZdVRPve7EqRdtZpvpBVMt1Ss0vBdHWfwyEf-o2FQM1AiW7rYOFmh2H0Wxtr",
+  "Nonce": "636765566285978063.NDViMWU5M2MtM2Q5MC00NWY4LTg2YjAtMmQyZmIyMzc5MWExYTRhODU0MzktYjI0OS00NjUyLTkwMjYtNTMyOGIzMmQ2ZDdm",
+  "Raw": {
+    "client_id": "fleet",
+    "redirect_uri": "http://localhost:54250/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access",
+    "response_mode": "form_post",
+    "nonce": "636765566285978063.NDViMWU5M2MtM2Q5MC00NWY4LTg2YjAtMmQyZmIyMzc5MWExYTRhODU0MzktYjI0OS00NjUyLTkwMjYtNTMyOGIzMmQ2ZDdm",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV85pZi4dKsqBUWxvZj31IlwAdP3vPybPf6HOxhnivR4f6CPYtQ76zevXaZJgXjHHswcTnw1_rNjyITfD_LoGOli0YEWR3m2bUz6r7wnhiB8yKQ155NAuX2VEv0krUTroU9cGKYpWm0b-wL680mz8iLbciukdCbDZK-EZlPQ0u9dZCKoYRB72Yr21Vfcp9Yxg0p5Z_8dGThyKN2fiNzYh2l3nEu5RWBHhBizVjumpmhS4JUhf7eRSv-nOtOiiZVN-y0kXqwBPq1ZnbaQGvlyKmjffsh8bZdVRPve7EqRdtZpvpBVMt1Ss0vBdHWfwyEf-o2FQM1AiW7rYOFmh2H0Wxtr",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:23:48.627 +11:00 [INF] Showing login: User is not authenticated
+2018-10-31 15:29:29.245 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-10-31 15:29:29.368 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-10-31 15:29:29.468 +11:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-10-31 15:29:29.471 +11:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "location",
+  "ClientName": "Location Monitoring",
+  "RedirectUri": "http://localhost:53821/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:53821/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile admin_access general_access_loc",
+  "State": "CfDJ8CmGR6UkikZGjqGvDn8gPV9RszD_n1QAotvpKKzQ7LhokX-B_5mTTbnXALtfSQMPi13ydh4XUbgf174aDZW44oZmNmf8BLWRqi8csIJoSjE6dDqR5fDE5PLn-dvFFvkpUNE-aE3dnCUUBREf23x_Mm4-DeTDySMb77FwbhhXdxeouvkPFA6rkyc9rhZOkwhbqC33zXcxiWqSJ-Qt-DoaVM86WErHk_c-xGMXl2bxawKLi_edgPmBSpeJ83F_ixTfK9Gp-rUVm6gKo4sAGryFw925ju4MRSvt0pibJVKvu1c36APuBv-PapmXdaP0Zxw8xw",
+  "Nonce": "636765569694222938.NjRiMGM2YjktNzViMi00MGUxLWFlYjUtYmFkZWZlMDYyNTYyZDE4ZTMxMWMtNzU3Yi00MDU4LWE5MjItOTNiNGFhNWJlMWQ2",
+  "Raw": {
+    "client_id": "location",
+    "redirect_uri": "http://localhost:53821/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile admin_access general_access_loc",
+    "response_mode": "form_post",
+    "nonce": "636765569694222938.NjRiMGM2YjktNzViMi00MGUxLWFlYjUtYmFkZWZlMDYyNTYyZDE4ZTMxMWMtNzU3Yi00MDU4LWE5MjItOTNiNGFhNWJlMWQ2",
+    "state": "CfDJ8CmGR6UkikZGjqGvDn8gPV9RszD_n1QAotvpKKzQ7LhokX-B_5mTTbnXALtfSQMPi13ydh4XUbgf174aDZW44oZmNmf8BLWRqi8csIJoSjE6dDqR5fDE5PLn-dvFFvkpUNE-aE3dnCUUBREf23x_Mm4-DeTDySMb77FwbhhXdxeouvkPFA6rkyc9rhZOkwhbqC33zXcxiWqSJ-Qt-DoaVM86WErHk_c-xGMXl2bxawKLi_edgPmBSpeJ83F_ixTfK9Gp-rUVm6gKo4sAGryFw925ju4MRSvt0pibJVKvu1c36APuBv-PapmXdaP0Zxw8xw",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-10-31 15:29:29.477 +11:00 [INF] Showing login: User is not authenticated
